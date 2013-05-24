@@ -1,0 +1,75 @@
+<?xml version="1.0" standalone="yes"?>
+<dsShedule xmlns="http://tempuri.org/dsEducLoad.xsd">
+  <Teacher>
+    <Id>1</Id>
+    <Name>Андреев А.Е.</Name>
+  </Teacher>
+  <Teacher>
+    <Id>2</Id>
+    <Name>Егунов В.А.</Name>
+  </Teacher>
+  <Teacher>
+    <Id>3</Id>
+    <Name>Забалуева А.Ф.</Name>
+  </Teacher>
+  <Teacher>
+    <Id>3</Id>
+    <Name>Федоров М.А.</Name>
+  </Teacher>
+  <Teacher>
+    <Id>-5</Id>
+    <Name>Коптелова И.П.</Name>
+  </Teacher>
+  <Teacher>
+    <Id>-6</Id>
+    <Name>Лукьянов В.С.</Name>
+  </Teacher>
+  <Teacher>
+    <Id>-7</Id>
+    <Name>Быков Д.В.</Name>
+  </Teacher>
+  <Teacher>
+    <Id>-8</Id>
+    <Name>Скакунов В.Н.</Name>
+  </Teacher>
+  <Teacher>
+    <Id>-9</Id>
+    <Name>Жариков Д.Н.</Name>
+  </Teacher>
+  <Teacher>
+    <Id>-10</Id>
+    <Name>Гиркин М.В.</Name>
+  </Teacher>
+  <Teacher>
+    <Id>-11</Id>
+    <Name>Егунов В.А.</Name>
+  </Teacher>
+  <Teacher>
+    <Id>-12</Id>
+    <Name>Королева И.Ю.</Name>
+  </Teacher>
+  <Teacher>
+    <Id>-13</Id>
+    <Name>Нефедьев А.И.</Name>
+  </Teacher>
+  <Teacher>
+    <Id>-14</Id>
+    <Name>Кузнецов М.А,</Name>
+  </Teacher>
+  <Teacher>
+    <Id>-15</Id>
+    <Name>Земцов А.Н.</Name>
+  </Teacher>
+  <Teacher>
+    <Id>-16</Id>
+    <Name>Еременко А.В.</Name>
+  </Teacher>
+  <Teacher>
+    <Id>-17</Id>
+    <Name>Кирносенко С.И.</Name>
+  </Teacher>
+  <Teacher>
+    <Id>-18</Id>
+    <Name>Шилин А.А.</Name>
+  </Teacher>
+</dsShedule>

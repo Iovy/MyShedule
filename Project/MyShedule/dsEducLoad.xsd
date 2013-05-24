@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsShedule" targetNamespace="http://tempuri.org/dsEducLoad.xsd" xmlns:mstns="http://tempuri.org/dsEducLoad.xsd" xmlns="http://tempuri.org/dsEducLoad.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsShedule" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dsShedule" msprop:Generator_UserDSName="dsShedule">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Education" msprop:Generator_TableClassName="EducationDataTable" msprop:Generator_TableVarName="tableEducation" msprop:Generator_TablePropName="Education" msprop:Generator_RowDeletingName="EducationRowDeleting" msprop:Generator_UserTableName="Education" msprop:Generator_RowChangingName="EducationRowChanging" msprop:Generator_RowEvHandlerName="EducationRowChangeEventHandler" msprop:Generator_RowDeletedName="EducationRowDeleted" msprop:Generator_RowEvArgName="EducationRowChangeEvent" msprop:Generator_RowChangedName="EducationRowChanged" msprop:Generator_RowClassName="EducationRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Id" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="1" msprop:Generator_ColumnVarNameInTable="columnId" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnPropNameInTable="IdColumn" msprop:Generator_UserColumnName="Id" type="xs:int" minOccurs="0" />
+              <xs:element name="Teacher" msprop:Generator_ColumnVarNameInTable="columnTeacher" msprop:Generator_ColumnPropNameInRow="Teacher" msprop:Generator_ColumnPropNameInTable="TeacherColumn" msprop:Generator_UserColumnName="Teacher" type="xs:string" minOccurs="0" />
+              <xs:element name="Discipline" msprop:Generator_ColumnVarNameInTable="columnDiscipline" msprop:Generator_ColumnPropNameInRow="Discipline" msprop:Generator_ColumnPropNameInTable="DisciplineColumn" msprop:Generator_UserColumnName="Discipline" type="xs:string" minOccurs="0" />
+              <xs:element name="Group" msprop:Generator_ColumnVarNameInTable="columnGroup" msprop:Generator_ColumnPropNameInRow="Group" msprop:Generator_ColumnPropNameInTable="GroupColumn" msprop:Generator_UserColumnName="Group" type="xs:string" minOccurs="0" />
+              <xs:element name="HoursSem" msprop:Generator_ColumnVarNameInTable="columnHoursSem" msprop:Generator_ColumnPropNameInRow="HoursSem" msprop:Generator_ColumnPropNameInTable="HoursSemColumn" msprop:Generator_UserColumnName="HoursSem" type="xs:decimal" minOccurs="0" />
+              <xs:element name="LessonType" msprop:Generator_ColumnVarNameInTable="columnLessonType" msprop:Generator_ColumnPropNameInRow="LessonType" msprop:Generator_ColumnPropNameInTable="LessonTypeColumn" msprop:Generator_UserColumnName="LessonType" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Room" msprop:Generator_TableClassName="RoomDataTable" msprop:Generator_TableVarName="tableRoom" msprop:Generator_TablePropName="Room" msprop:Generator_RowDeletingName="RoomRowDeleting" msprop:Generator_UserTableName="Room" msprop:Generator_RowChangingName="RoomRowChanging" msprop:Generator_RowEvHandlerName="RoomRowChangeEventHandler" msprop:Generator_RowDeletedName="RoomRowDeleted" msprop:Generator_RowEvArgName="RoomRowChangeEvent" msprop:Generator_RowChangedName="RoomRowChanged" msprop:Generator_RowClassName="RoomRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" msprop:Generator_UserColumnName="Name" type="xs:string" minOccurs="0" />
+              <xs:element name="Lection" msprop:Generator_ColumnVarNameInTable="columnLection" msprop:Generator_ColumnPropNameInRow="Lection" msprop:Generator_ColumnPropNameInTable="LectionColumn" msprop:Generator_UserColumnName="Lection" type="xs:boolean" default="true" minOccurs="0" />
+              <xs:element name="DisciplineLection" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="DisciplineLection" msprop:Generator_ColumnVarNameInTable="columnDisciplineLection" msprop:Generator_ColumnPropNameInTable="DisciplineLectionColumn" msprop:Generator_UserColumnName="DisciplineLection" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="LabWork" msprop:Generator_ColumnVarNameInTable="columnLabWork" msprop:Generator_ColumnPropNameInRow="LabWork" msprop:Generator_ColumnPropNameInTable="LabWorkColumn" msprop:Generator_UserColumnName="LabWork" type="xs:boolean" default="true" minOccurs="0" />
+              <xs:element name="DisciplineLabWork" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="DisciplineLabWork" msprop:Generator_ColumnVarNameInTable="columnDisciplineLabWork" msprop:Generator_ColumnPropNameInTable="DisciplineLabWorkColumn" msprop:Generator_UserColumnName="DisciplineLabWork" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="Practice" msprop:Generator_ColumnVarNameInTable="columnPractice" msprop:Generator_ColumnPropNameInRow="Practice" msprop:Generator_ColumnPropNameInTable="PracticeColumn" msprop:Generator_UserColumnName="Practice" type="xs:boolean" default="true" minOccurs="0" />
+              <xs:element name="DisciplinePractice" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="DisciplinePractice" msprop:Generator_ColumnVarNameInTable="columnDisciplinePractice" msprop:Generator_ColumnPropNameInTable="DisciplinePracticeColumn" msprop:Generator_UserColumnName="DisciplinePractice" type="xs:string" default="" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Teacher" msprop:Generator_TableClassName="TeacherDataTable" msprop:Generator_TableVarName="tableTeacher" msprop:Generator_TablePropName="Teacher" msprop:Generator_RowDeletingName="TeacherRowDeleting" msprop:Generator_UserTableName="Teacher" msprop:Generator_RowChangingName="TeacherRowChanging" msprop:Generator_RowEvHandlerName="TeacherRowChangeEventHandler" msprop:Generator_RowDeletedName="TeacherRowDeleted" msprop:Generator_RowEvArgName="TeacherRowChangeEvent" msprop:Generator_RowChangedName="TeacherRowChanged" msprop:Generator_RowClassName="TeacherRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Id" msdata:AutoIncrement="true" msprop:Generator_ColumnVarNameInTable="columnId" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnPropNameInTable="IdColumn" msprop:Generator_UserColumnName="Id" type="xs:int" minOccurs="0" />
+              <xs:element name="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" msprop:Generator_UserColumnName="Name" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Group" msprop:Generator_TableClassName="GroupDataTable" msprop:Generator_TableVarName="tableGroup" msprop:Generator_TablePropName="Group" msprop:Generator_RowDeletingName="GroupRowDeleting" msprop:Generator_UserTableName="Group" msprop:Generator_RowChangingName="GroupRowChanging" msprop:Generator_RowEvHandlerName="GroupRowChangeEventHandler" msprop:Generator_RowDeletedName="GroupRowDeleted" msprop:Generator_RowEvArgName="GroupRowChangeEvent" msprop:Generator_RowChangedName="GroupRowChanged" msprop:Generator_RowClassName="GroupRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Id" msdata:AutoIncrement="true" msprop:Generator_ColumnVarNameInTable="columnId" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnPropNameInTable="IdColumn" msprop:Generator_UserColumnName="Id" type="xs:int" minOccurs="0" />
+              <xs:element name="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" msprop:Generator_UserColumnName="Name" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Discipline" msprop:Generator_TableClassName="DisciplineDataTable" msprop:Generator_TableVarName="tableDiscipline" msprop:Generator_TablePropName="Discipline" msprop:Generator_RowDeletingName="DisciplineRowDeleting" msprop:Generator_UserTableName="Discipline" msprop:Generator_RowChangingName="DisciplineRowChanging" msprop:Generator_RowEvHandlerName="DisciplineRowChangeEventHandler" msprop:Generator_RowDeletedName="DisciplineRowDeleted" msprop:Generator_RowEvArgName="DisciplineRowChangeEvent" msprop:Generator_RowChangedName="DisciplineRowChanged" msprop:Generator_RowClassName="DisciplineRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Id" msdata:AutoIncrement="true" msprop:Generator_ColumnVarNameInTable="columnId" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnPropNameInTable="IdColumn" msprop:Generator_UserColumnName="Id" type="xs:int" minOccurs="0" />
+              <xs:element name="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" msprop:Generator_UserColumnName="Name" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1">
+      <xs:selector xpath=".//mstns:Education" />
+      <xs:field xpath="mstns:Id" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Class Name="MyShedule.SheduleDay">
+    <Position X="6" Y="0.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>IABAQACIIAAACEAAABBAAAIAEAAAAAAAAASQgIkCgAA=</HashCode>
+      <FileName>SheduleClasses\SheduleDay.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyShedule.SheduleTime">
+    <Position X="0.5" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAQACAIABkAAAEoACAFgAAAgAAAIJAAAAAAIQEByE=</HashCode>
+      <FileName>SheduleClasses\SheduleTime.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyShedule.SheduleLesson">
+    <Position X="8.75" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AgHAAEAKIAIABAQAABAAAAAAAgAAAAIIAQAAAIhCARA=</HashCode>
+      <FileName>SheduleClasses\SheduleLesson.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="MyShedule.SheduleWeeks">
+    <Position X="3" Y="0.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AABiAAAAEACEABAAAAAAAAAiIAAhBIAAQAARAABQAAA=</HashCode>
+      <FileName>SheduleClasses\SheduleWeeks.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyShedule.LoadItem">
+    <Position X="0.5" Y="7" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAECAEAEAAIAAAAgAABACAAEAgAAAQAAEAAAAggAAFA=</HashCode>
+      <FileName>Dictionaryes\SheduleLoadItem.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="MyShedule.EducationLoadAdapter">
+    <Position X="3.75" Y="6" Width="4.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAiAAAAAAAAAAAIAAAAAAAAAAAAAAEAAA=</HashCode>
+      <FileName>Dictionaryes\SheduleLoadItemsAdapter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyShedule.Employments">
+    <Position X="3.5" Y="8.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AEoAAEEAAAAAAAAAAAAABAACAAAAAAAAAAAAAgBAACA=</HashCode>
+      <FileName>SheduleClasses\SheduleEmployment.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyShedule.Employment">
+    <Position X="6.5" Y="8.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAIAAAAAAAQAAAAAAAAAAAAAAAAAAQA=</HashCode>
+      <FileName>SheduleClasses\SheduleEmployment.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyShedule.EmploymentList">
+    <Position X="5" Y="12.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>CEIAAEAAAACACFARCAAAFAQgAAAAAAAAKACAAQBQIAA=</HashCode>
+      <FileName>SheduleClasses\SheduleEmployment.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="MyShedule.SheduleGenerator" BaseTypeListCollapsed="true">
+    <Position X="11.25" Y="8.5" Width="4" />
+    <TypeIdentifier>
+      <HashCode>AABCAAECIBAAAAAAABQAAAACHQGEiAGAIAAAAFAAABY=</HashCode>
+      <FileName>SheduleClasses\SheduleReactor.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="MyShedule.DistributeResult">
+    <Position X="9" Y="8.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAEAAAAA=</HashCode>
+      <FileName>SheduleClasses\SheduleReactor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="MyShedule.WeekInfo">
+    <Position X="15.5" Y="8.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAA=</HashCode>
+      <FileName>SheduleClasses\SheduleReactor.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="MyShedule.Position">
+    <Position X="15.5" Y="11" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAQA=</HashCode>
+      <FileName>SheduleClasses\SheduleReactor.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Interface Name="MyShedule.ISheduleGenerator">
+    <Position X="9" Y="10.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAA=</HashCode>
+      <FileName>SheduleClasses\SheduleReactor.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="MyShedule.ReasonEmployment">
+    <Position X="3" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAIAAAAAAABYAAAAAAAAAAAAACAAAAAAA=</HashCode>
+      <FileName>SheduleClasses\SheduleEmployment.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

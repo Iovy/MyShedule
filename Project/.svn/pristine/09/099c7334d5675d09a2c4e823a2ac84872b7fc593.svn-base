@@ -1,0 +1,79 @@
+<?xml version="1.0" standalone="yes"?>
+<dsShedule xmlns="http://tempuri.org/dsEducLoad.xsd">
+  <Discipline>
+    <Id>-5</Id>
+    <Name>Схемотехника</Name>
+  </Discipline>
+  <Discipline>
+    <Id>-6</Id>
+    <Name>Организация ЭВМ</Name>
+  </Discipline>
+  <Discipline>
+    <Id>-7</Id>
+    <Name>Теория автоматов</Name>
+  </Discipline>
+  <Discipline>
+    <Id>3</Id>
+    <Name>Криптография</Name>
+  </Discipline>
+  <Discipline>
+    <Id>4</Id>
+    <Name>Узлы и устройства</Name>
+  </Discipline>
+  <Discipline>
+    <Id>5</Id>
+    <Name>Машинно-ориентированные языки</Name>
+  </Discipline>
+  <Discipline>
+    <Id>6</Id>
+    <Name>Теория принятия решений</Name>
+  </Discipline>
+  <Discipline>
+    <Id>7</Id>
+    <Name>Меотды оптимизации</Name>
+  </Discipline>
+  <Discipline>
+    <Id>8</Id>
+    <Name>Теория программирования</Name>
+  </Discipline>
+  <Discipline>
+    <Id>9</Id>
+    <Name>Микропроцессорные системы</Name>
+  </Discipline>
+  <Discipline>
+    <Id>10</Id>
+    <Name>ПО компьютерных сетей</Name>
+  </Discipline>
+  <Discipline>
+    <Id>12</Id>
+    <Name>Отказоустройчивые системы</Name>
+  </Discipline>
+  <Discipline>
+    <Id>13</Id>
+    <Name>Программирование многопроцессорных систем</Name>
+  </Discipline>
+  <Discipline>
+    <Id>14</Id>
+    <Name>Вычислительные системы и сетевые технологии</Name>
+  </Discipline>
+  <Discipline>
+    <Id>15</Id>
+    <Name>КТО произв.ЭВМ</Name>
+  </Discipline>
+  <Discipline>
+    <Id>16</Id>
+    <Name>Системы коммутации</Name>
+  </Discipline>
+  <Discipline>
+    <Id>17</Id>
+    <Name>Специальное программное обеспечение</Name>
+  </Discipline>
+  <Discipline>
+    <Id>18</Id>
+    <Name>Теория телетрафика</Name>
+  </Discipline>
+  <Discipline>
+    <Id>19</Id>
+    <Name>Периферийные устройства</Name>
+  </Discipline>
+</dsShedule>

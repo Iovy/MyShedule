@@ -1,0 +1,51 @@
+<?xml version="1.0" standalone="yes"?>
+<dsShedule xmlns="http://tempuri.org/dsEducLoad.xsd">
+  <Education>
+    <Id>1</Id>
+    <Teacher>Коптелова И.П.</Teacher>
+    <Discipline>Теория принятия решений</Discipline>
+    <Group>ИВТ-461, ИВТ-462, ИВТ-463</Group>
+    <HoursSem>40</HoursSem>
+    <LessonType>0</LessonType>
+  </Education>
+  <Education>
+    <Id>2</Id>
+    <Teacher>Лукьянов В.С.</Teacher>
+    <Discipline>Криптография</Discipline>
+    <Group>ИВТ-360, ИВТ-361, ИВТ-362</Group>
+    <HoursSem>40</HoursSem>
+    <LessonType>0</LessonType>
+  </Education>
+  <Education>
+    <Id>3</Id>
+    <Teacher>Андреев А.Е.</Teacher>
+    <Discipline>Организация ЭВМ</Discipline>
+    <Group>ИВТ-360, ИВТ-361, ИВТ-362</Group>
+    <HoursSem>40</HoursSem>
+    <LessonType>0</LessonType>
+  </Education>
+  <Education>
+    <Id>4</Id>
+    <Teacher>Забалуева А.Ф.</Teacher>
+    <Discipline>Организация ЭВМ</Discipline>
+    <Group>ИВТ-360</Group>
+    <HoursSem>10</HoursSem>
+    <LessonType>2</LessonType>
+  </Education>
+  <Education>
+    <Id>5</Id>
+    <Teacher>Забалуева А.Ф.</Teacher>
+    <Discipline>Организация ЭВМ</Discipline>
+    <Group>ИВТ-361</Group>
+    <HoursSem>10</HoursSem>
+    <LessonType>2</LessonType>
+  </Education>
+  <Education>
+    <Id>6</Id>
+    <Teacher>Забалуева А.Ф.</Teacher>
+    <Discipline>Организация ЭВМ</Discipline>
+    <Group>ИВТ-362</Group>
+    <HoursSem>10</HoursSem>
+    <LessonType>2</LessonType>
+  </Education>
+</dsShedule>

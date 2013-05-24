@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" standalone="yes"?>
+<dsShedule xmlns="http://tempuri.org/dsEducLoad.xsd">
+  <Education>
+    <Id>1</Id>
+    <Teacher>Андреев А.Е.</Teacher>
+    <Discipline>Организация ЭВМ</Discipline>
+    <Group>ИВТ-360,ИВТ-361,ИВТ-362</Group>
+    <HoursSem>34</HoursSem>
+    <LessonType>0</LessonType>
+  </Education>
+  <Education>
+    <Id>2</Id>
+    <Teacher>Андреев А.Е.</Teacher>
+    <Discipline>Организация ЭВМ</Discipline>
+    <Group>ИВТ-360</Group>
+    <HoursSem>17</HoursSem>
+    <LessonType>1</LessonType>
+  </Education>
+  <Education>
+    <Id>3</Id>
+    <Teacher>Андреев А.Е.</Teacher>
+    <Discipline>Программирование многопроц.систем</Discipline>
+    <Group>ЭВМ-5н</Group>
+    <HoursSem>18</HoursSem>
+    <LessonType>0</LessonType>
+  </Education>
+  <Education>
+    <Id>4</Id>
+    <Teacher>Андреев А.Е.</Teacher>
+    <Discipline>Выч. системы и сетевые технологии</Discipline>
+    <Group>ЭВМ-5н,ЭВМ-5.1П,ЭВМ-5.2П,САПР-5.1,САПР-5.1П</Group>
+    <HoursSem>18</HoursSem>
+    <LessonType>0</LessonType>
+  </Education>
+  <Education>
+    <Id>5</Id>
+    <Teacher>Забалуева А.Ф.</Teacher>
+    <Discipline>Организация ЭВМ</Discipline>
+    <Group>ИВТ-361</Group>
+    <HoursSem>34</HoursSem>
+    <LessonType>1</LessonType>
+  </Education>
+  <Education>
+    <Id>6</Id>
+    <Teacher>Забалуева А.Ф.</Teacher>
+    <Discipline>Организация ЭВМ</Discipline>
+    <Group>ИВТ-362</Group>
+    <HoursSem>17</HoursSem>
+    <LessonType>1</LessonType>
+  </Education>
+  <Education>
+    <Id>7</Id>
+    <Teacher>Федоров М.А.</Teacher>
+    <Discipline>Организация ЭВМ</Discipline>
+    <Group>ИВТ-360</Group>
+    <HoursSem>17</HoursSem>
+    <LessonType>2</LessonType>
+  </Education>
+  <Education>
+    <Id>8</Id>
+    <Teacher>Федоров М.А.</Teacher>
+    <Discipline>Организация ЭВМ</Discipline>
+    <Group>ИВТ-361</Group>
+    <HoursSem>17</HoursSem>
+    <LessonType>2</LessonType>
+  </Education>
+  <Education>
+    <Id>9</Id>
+    <Teacher>Федоров М.А.</Teacher>
+    <Discipline>Организация ЭВМ</Discipline>
+    <Group>ИВТ-362</Group>
+    <HoursSem>17</HoursSem>
+    <LessonType>2</LessonType>
+  </Education>
+</dsShedule>
