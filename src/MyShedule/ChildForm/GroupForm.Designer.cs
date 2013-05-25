@@ -101,8 +101,8 @@
             // bindingNavigatorCountItem
             // 
             this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(43, 22);
-            this.bindingNavigatorCountItem.Text = "для {0}";
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(35, 22);
+            this.bindingNavigatorCountItem.Text = "of {0}";
             this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
             // 
             // bindingNavigatorDeleteItem
@@ -191,7 +191,7 @@
             this.tsbReadFile.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbReadFile.Name = "tsbReadFile";
             this.tsbReadFile.Size = new System.Drawing.Size(23, 22);
-            this.tsbReadFile.Text = "Загрузить нагрузку";
+            this.tsbReadFile.Text = "Загрузить группы";
             this.tsbReadFile.Click += new System.EventHandler(this.tsbReadFile_Click);
             // 
             // GroupForm

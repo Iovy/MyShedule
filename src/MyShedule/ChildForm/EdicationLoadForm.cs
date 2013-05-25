@@ -44,7 +44,10 @@ namespace MyShedule
         {
             DialogResult dr = MessageBox.Show("Сохранить перед закрытием? ", "внимание", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
             if (dr == System.Windows.Forms.DialogResult.OK)
-                Save();
+            {
+                string filename = "Data\\Нагрузка.xml";
+                WriteXmlFile(filename);
+            }
         }
 
         private void InitGrid()
@@ -112,6 +115,8 @@ namespace MyShedule
             cmbClmn.DataSource = bs;
             dgvEducationLoad.Columns.Add(cmbClmn);
 
+            string filename = "Data\\Нагрузка.xml";
+            ReadXmlFile(filename);
             BindingSource source = new BindingSource();
             source.DataSource = SheduleDataSet.Education;
             dgvEducationLoad.DataSource = source;
@@ -175,11 +180,6 @@ namespace MyShedule
         }
 
         private void tsbSaveFile_Click(object sender, EventArgs e)
-        {
-            Save();
-        }
-
-        private void Save()
         {
             SaveFileDialog SaveDlg = new SaveFileDialog();
             SaveDlg.DefaultExt = "xml";

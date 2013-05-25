@@ -35,8 +35,10 @@ namespace MyShedule
         {
             DialogResult dr = MessageBox.Show("Сохранить перед закрытием? ", "внимание", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
             if (dr == System.Windows.Forms.DialogResult.OK)
-                Save();
-
+            {
+                string filename = "Data\\Преподаватели.xml";
+                WriteXmlFile(filename);
+            }
         }
 
         public List<ScheduleLessonType> LessonTypes;
@@ -61,7 +63,9 @@ namespace MyShedule
             clmn.HeaderText = "Преподаватель";
             clmn.Width = clmn.HeaderText.Length*8;
             dgvTeachers.Columns.Add(clmn);
-
+ 
+            string filename = "Data\\Преподаватели.xml";
+            ReadXmlFile(filename);
             BindingSource source = new BindingSource();
             source.DataSource = ds.Teacher;
             dgvTeachers.DataSource = source;
@@ -87,11 +91,6 @@ namespace MyShedule
         }
 
         private void tsbSaveFile_Click(object sender, EventArgs e)
-        {
-            Save();
-        }
-
-        private void Save()
         {
             SaveFileDialog SaveDlg = new SaveFileDialog();
             SaveDlg.DefaultExt = "xml";

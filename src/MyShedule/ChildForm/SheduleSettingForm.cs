@@ -66,12 +66,17 @@ namespace MyShedule
         {
             SettingsAplication stg = new SettingsAplication();
             if ((nudMaxCountLessonsOfWeekDay.Value != (nudLastLessonsOfWeekDay.Value - nudFirstLessonsOfWeekDay.Value) + 1) ||
-                (nudMaxCountLessonsOfWeekEnd.Value != (nudLastLessonsOfWeekEnd.Value - nudFirstLessonsOfWeekEnd.Value) + 1) ||
-                ((nudMaxCountLessonsOfWeekDay.Value > nudCountLessonsOfDay.Value) || (nudMaxCountLessonsOfWeekEnd.Value > nudCountLessonsOfDay.Value)))
+                (nudMaxCountLessonsOfWeekEnd.Value != (nudLastLessonsOfWeekEnd.Value - nudFirstLessonsOfWeekEnd.Value) + 1))
             {
-                MessageBox.Show("Несогласованность параметров","Ошибка",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                MessageBox.Show("Количество пар либо в будни, либо в выходные не совпадает с разницой между первой и последней парой","Ошибка",MessageBoxButtons.OK,MessageBoxIcon.Error);
                 return;
             }
+            else if ((nudMaxCountLessonsOfWeekDay.Value > nudCountLessonsOfDay.Value) || (nudMaxCountLessonsOfWeekEnd.Value > nudCountLessonsOfDay.Value))
+            {
+                MessageBox.Show("Количество пар либо в будни, либо в выходные не больше, чем общее количество пар в день", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
             stg.CountDayEducationalWeek = (int) nudCountDayEducationalWeek.Value;
             stg.CountDaysShedule = (int) nudCountDaysShedule.Value;
             stg.CountEducationalWeekBySem = (int) nudCountEducationalWeekBySem.Value;

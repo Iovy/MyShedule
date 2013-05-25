@@ -191,7 +191,7 @@
             this.tsbReadFile.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbReadFile.Name = "tsbReadFile";
             this.tsbReadFile.Size = new System.Drawing.Size(23, 22);
-            this.tsbReadFile.Text = "Загрузить нагрузку";
+            this.tsbReadFile.Text = "Загрузить аудитории";
             this.tsbReadFile.Click += new System.EventHandler(this.tsbReadFile_Click);
             // 
             // RoomsForm

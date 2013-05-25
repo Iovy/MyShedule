@@ -117,7 +117,7 @@ namespace MyShedule
 
         void cmbYear_SelectedValueChanged(object sender, EventArgs e)
         {
-            Year = Convert.ToInt32(cmbYear.SelectedValue);
+            Year = Convert.ToInt32(cmbYear.SelectedItem.ToString());
         }
 
         private void CreateYearList()
@@ -135,7 +135,7 @@ namespace MyShedule
 
         private void btnCreateShedule_Click(object sender, EventArgs e)
         {
-            Year = Convert.ToInt32(cmbYear.SelectedValue);
+            Year = Convert.ToInt32(cmbYear.SelectedItem.ToString());
             Sem = GetSem();
             FirstDaySem = dtpFirstDaySem.Value;
             LastDaySem = dtpLastDaySem.Value;
