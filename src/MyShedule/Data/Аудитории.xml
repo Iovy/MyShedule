@@ -1,0 +1,75 @@
+<?xml version="1.0" standalone="yes"?>
+<dsShedule xmlns="http://tempuri.org/dsEducLoad.xsd">
+  <Room>
+    <Name>В-1301</Name>
+    <Lection>true</Lection>
+    <DisciplineLection />
+    <LabWork>true</LabWork>
+    <DisciplineLabWork />
+    <Practice>true</Practice>
+    <DisciplinePractice />
+  </Room>
+  <Room>
+    <Name>В-1302</Name>
+    <Lection>true</Lection>
+    <DisciplineLection />
+    <LabWork>true</LabWork>
+    <DisciplineLabWork />
+    <Practice>true</Practice>
+    <DisciplinePractice />
+  </Room>
+  <Room>
+    <Name>В-1302а</Name>
+    <Lection>true</Lection>
+    <DisciplineLection />
+    <LabWork>true</LabWork>
+    <DisciplineLabWork />
+    <Practice>true</Practice>
+    <DisciplinePractice />
+  </Room>
+  <Room>
+    <Name>В-1303</Name>
+    <Lection>true</Lection>
+    <DisciplineLection />
+    <LabWork>true</LabWork>
+    <DisciplineLabWork />
+    <Practice>true</Practice>
+    <DisciplinePractice />
+  </Room>
+  <Room>
+    <Name>В-1307</Name>
+    <Lection>false</Lection>
+    <DisciplineLection />
+    <LabWork>true</LabWork>
+    <DisciplineLabWork />
+    <Practice>true</Practice>
+    <DisciplinePractice />
+  </Room>
+  <Room>
+    <Name>В-1201</Name>
+    <Lection>true</Lection>
+    <DisciplineLection />
+    <LabWork>false</LabWork>
+    <DisciplineLabWork />
+    <Practice>true</Practice>
+    <DisciplinePractice />
+  </Room>
+  <Room>
+    <Name>В-501</Name>
+    <Lection>true</Lection>
+    <DisciplineLection />
+    <LabWork>false</LabWork>
+    <DisciplineLabWork />
+    <Practice>true</Practice>
+    <DisciplinePractice />
+  </Room>
+  <Room>
+    <Name>А-200а</Name>
+    <Lection>false</Lection>
+    <DisciplineLection />
+    <LabWork>true</LabWork>
+    <DisciplineLabWork />
+    <Practice>true</Practice>
+    <DisciplinePractice />
+  </Room>
+</dsShedule>

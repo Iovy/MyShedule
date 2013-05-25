@@ -1,0 +1,433 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{85738660-15FF-414F-BE9C-6B3EDE72B0A9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MyShedule</RootNamespace>
+    <AssemblyName>MyShedule</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ExportToRTF">
+      <HintPath>..\..\lib\ExportToRTF.dll</HintPath>
+    </Reference>
+    <Reference Include="Reporting">
+      <HintPath>..\..\lib\Reporting.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Yogesh.ExcelXml">
+      <HintPath>..\..\lib\Yogesh.ExcelXml.dll</HintPath>
+    </Reference>
+    <Reference Include="Yogesh.Extensions">
+      <HintPath>..\..\lib\Yogesh.Extensions.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ChildForm\ChooseGroupsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildForm\ChooseGroupsForm.Designer.cs">
+      <DependentUpon>ChooseGroupsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildForm\RoomsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildForm\RoomsForm.Designer.cs">
+      <DependentUpon>RoomsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildForm\TeachersForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildForm\TeachersForm.Designer.cs">
+      <DependentUpon>TeachersForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildForm\ChooseGroupForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildForm\ChooseGroupForm.Designer.cs">
+      <DependentUpon>ChooseGroupForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dictionaries\DictionaryConverter.cs" />
+    <Compile Include="Dictionaries\SheduleTeacher.cs" />
+    <Compile Include="ChildForm\DisciplineForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildForm\DisciplineForm.Designer.cs">
+      <DependentUpon>DisciplineForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildForm\EdicationLoadForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildForm\EdicationLoadForm.Designer.cs">
+      <DependentUpon>EdicationLoadForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dictionaries\SheduleLoadItemsAdapter.cs" />
+    <Compile Include="ChildForm\LessonForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildForm\LessonForm.Designer.cs">
+      <DependentUpon>LessonForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dsEducLoad.cs">
+      <DependentUpon>dsEducLoad.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dsEducLoad.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsEducLoad.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsShedule.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsShedule.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\DocExporter.cs" />
+    <Compile Include="ChildForm\GroupForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildForm\GroupForm.Designer.cs">
+      <DependentUpon>GroupForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IEmploymenType.cs" />
+    <Compile Include="Reports\IExporter.cs" />
+    <Compile Include="SheduleClasses\ShedulePointer.cs" />
+    <Compile Include="SheduleClasses\SettingShedule.cs" />
+    <Compile Include="SheduleClasses\SheduleLessonType.cs" />
+    <Compile Include="SheduleClasses\SheduleWeeks.cs" />
+    <Compile Include="SheduleClasses\SheduleDay.cs" />
+    <Compile Include="SheduleClasses\SheduleLesson.cs" />
+    <Compile Include="SheduleClasses\SheduleEmployment.cs" />
+    <Compile Include="SheduleClasses\SheduleReactor.cs" />
+    <Compile Include="Dictionaries\SheduleLoadItem.cs" />
+    <Compile Include="SheduleClasses\SheduleView.cs" />
+    <Compile Include="ChildForm\CreateSheduleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildForm\CreateSheduleForm.Designer.cs">
+      <DependentUpon>CreateSheduleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SheduleClasses\SheduleEnums.cs" />
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SheduleClasses\SheduleTime.cs" />
+    <Compile Include="ChildForm\SheduleSettingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildForm\SheduleSettingForm.Designer.cs">
+      <DependentUpon>SheduleSettingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SettingsAplication.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>SettingsAplication.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Dictionaries\SheduleRoom.cs" />
+    <Compile Include="Dictionaries\SheduleGroup.cs" />
+    <Compile Include="Dictionaries\SheduleDiscipline.cs" />
+    <Compile Include="SheduleExamType.cs" />
+    <Compile Include="SheduleSerializer.cs" />
+    <Compile Include="ChildForm\stampParamsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildForm\stampParamsForm.Designer.cs">
+      <DependentUpon>stampParamsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TableGUIManager.cs" />
+    <Compile Include="Reports\XLSExporter.cs" />
+    <EmbeddedResource Include="ChildForm\ChooseGroupForm.resx">
+      <DependentUpon>ChooseGroupForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildForm\ChooseGroupsForm.resx">
+      <DependentUpon>ChooseGroupsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildForm\CreateSheduleForm.resx">
+      <DependentUpon>CreateSheduleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildForm\DisciplineForm.resx">
+      <DependentUpon>DisciplineForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildForm\GroupForm.resx">
+      <DependentUpon>GroupForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildForm\RoomsForm.resx">
+      <DependentUpon>RoomsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildForm\SheduleSettingForm.resx">
+      <DependentUpon>SheduleSettingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildForm\stampParamsForm.resx">
+      <DependentUpon>stampParamsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <EmbeddedResource Include="ChildForm\EdicationLoadForm.resx">
+      <DependentUpon>EdicationLoadForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildForm\LessonForm.resx">
+      <DependentUpon>LessonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildForm\TeachersForm.resx">
+      <DependentUpon>TeachersForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="dsEducLoad.xsc">
+      <DependentUpon>dsEducLoad.xsd</DependentUpon>
+    </None>
+    <None Include="dsEducLoad.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsEducLoad.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsEducLoad.xss">
+      <DependentUpon>dsEducLoad.xsd</DependentUpon>
+    </None>
+    <None Include="dsShedule.xsc">
+      <DependentUpon>dsShedule.xsd</DependentUpon>
+    </None>
+    <None Include="dsShedule.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsShedule.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsShedule.xss">
+      <DependentUpon>dsShedule.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="SettingsAplication.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>SheduleSettings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\time_go.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\table_edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page_save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\table_add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\table_save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\folder_table.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pencil_add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pencil_delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clock_add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clock_delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\time.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\time_delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clock_play.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\picture_empty.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\accept.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page_excel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\date_add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\date_delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\date.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cog_edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pictures.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\status_away.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\door_open.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\control_start_blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\control_end_blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\control_rewind_blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\control_fastforward_blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\date_edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow_down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow_up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\group.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\table_row_delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\table_row_insert.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow_refresh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\comment.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\note.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cursor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page_white_word.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page_save1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clock_link.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_suit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\book.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page_white_excel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page_white_text.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ExamClasses\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\Аудитории.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\Группы.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\Нагрузка.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\Преподаватели.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\Дисциплины.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
