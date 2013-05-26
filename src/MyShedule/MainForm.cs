@@ -199,7 +199,7 @@ namespace MyShedule
 		    if (!CheckInputData)
 		        return;
 		
-		    CreateSheduleForm frmShedule = new CreateSheduleForm(true, new DateTime(DateTime.Now.Year + 1, 1, 1), new DateTime(DateTime.Now.Year + 1, 1, 31));
+		    CreateSheduleForm frmShedule = new CreateSheduleForm(true, new DateTime(DateTime.Now.Year + 2, 1, 1), new DateTime(DateTime.Now.Year + 2, 1, 31));
 		    if (frmShedule.ShowDialog() != System.Windows.Forms.DialogResult.OK)
 		        return;
 		

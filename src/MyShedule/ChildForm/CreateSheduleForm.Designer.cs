@@ -34,10 +34,10 @@
             this.label2 = new System.Windows.Forms.Label();
             this.btnCreateShedule = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
+            this.lblStartDate = new System.Windows.Forms.Label();
             this.dtpFirstDaySem = new System.Windows.Forms.DateTimePicker();
             this.dtpLastDaySem = new System.Windows.Forms.DateTimePicker();
-            this.label4 = new System.Windows.Forms.Label();
+            this.lblEndDate = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -98,14 +98,14 @@
             this.btnCancel.UseVisualStyleBackColor = true;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
-            // label3
+            // lblStartDate
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 62);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(96, 13);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "Начало семестра";
+            this.lblStartDate.AutoSize = true;
+            this.lblStartDate.Location = new System.Drawing.Point(12, 62);
+            this.lblStartDate.Name = "lblStartDate";
+            this.lblStartDate.Size = new System.Drawing.Size(27, 13);
+            this.lblStartDate.TabIndex = 6;
+            this.lblStartDate.Text = "start";
             // 
             // dtpFirstDaySem
             // 
@@ -121,14 +121,14 @@
             this.dtpLastDaySem.Size = new System.Drawing.Size(138, 20);
             this.dtpLastDaySem.TabIndex = 9;
             // 
-            // label4
+            // lblEndDate
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(12, 88);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(90, 13);
-            this.label4.TabIndex = 8;
-            this.label4.Text = "Конец семестра";
+            this.lblEndDate.AutoSize = true;
+            this.lblEndDate.Location = new System.Drawing.Point(12, 88);
+            this.lblEndDate.Name = "lblEndDate";
+            this.lblEndDate.Size = new System.Drawing.Size(25, 13);
+            this.lblEndDate.TabIndex = 8;
+            this.lblEndDate.Text = "end";
             // 
             // CreateSheduleForm
             // 
@@ -136,9 +136,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 190);
             this.Controls.Add(this.dtpLastDaySem);
-            this.Controls.Add(this.label4);
+            this.Controls.Add(this.lblEndDate);
             this.Controls.Add(this.dtpFirstDaySem);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.lblStartDate);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnCreateShedule);
             this.Controls.Add(this.cmbSem);
@@ -150,7 +150,7 @@
             this.MinimizeBox = false;
             this.Name = "CreateSheduleForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Создать расписание";
+            this.Text = "title";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -164,9 +164,9 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnCreateShedule;
         private System.Windows.Forms.Button btnCancel;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lblStartDate;
         private System.Windows.Forms.DateTimePicker dtpFirstDaySem;
         private System.Windows.Forms.DateTimePicker dtpLastDaySem;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lblEndDate;
     }
 }

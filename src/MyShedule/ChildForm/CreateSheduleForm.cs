@@ -11,16 +11,29 @@ namespace MyShedule
 {
     public partial class CreateSheduleForm : Form
     {
-        public CreateSheduleForm(bool useChecking, DateTime starDate, DateTime finishDate)
+        public CreateSheduleForm(bool useChecking, DateTime startDate, DateTime finishDate)
         {
             InitializeComponent();
 
             useDateChecking = useChecking;
-
-            StartDate = starDate;
+            Year = startDate.Year;
+            StartDate = startDate;
             FinishDate = finishDate;
-            Year = starDate.Year;
             Sem = 1;
+
+            if (!useDateChecking)
+            {
+                this.Text = "Создать расписание занятий";
+                lblStartDate.Text = "Начало семестра";
+                lblEndDate.Text = "Конец семестра";
+            }
+            else
+            {
+                this.Text = "Создать расписание экзаменов";
+                lblStartDate.Text = "Начало сессии";
+                lblEndDate.Text = "Конец сессии";
+                Year--;
+            }
 
             this.Load += new EventHandler(CreateShduleForm_Load);
         }
@@ -91,14 +104,30 @@ namespace MyShedule
             if (Sem == 1)
             {
                 // выставляем 1-е сентября
-                dtpFirstDaySem.Value = new DateTime(Year, 9, 1);
-                dtpLastDaySem.Value = new DateTime(Year + 1, 1, 1);
+                if (!useDateChecking)
+                {
+                    dtpFirstDaySem.Value = new DateTime(Year, 9, 1);
+                    dtpLastDaySem.Value = new DateTime(Year + 1, 1, 1);
+                }
+                else
+                {
+                    dtpFirstDaySem.Value = new DateTime(Year + 1, 1, 1);
+                    dtpLastDaySem.Value = new DateTime(Year + 1, 1, 31);
+                }
             }
             else if (Sem == 2)
             {
                 // выставляем 1-е февраля
-                dtpFirstDaySem.Value = new DateTime(Year, 2, 1);
-                dtpLastDaySem.Value  = new DateTime(Year, 6, 1);
+                if (!useDateChecking)
+                {
+                    dtpFirstDaySem.Value = new DateTime(Year, 2, 1);
+                    dtpLastDaySem.Value = new DateTime(Year, 6, 1);
+                }
+                else
+                {
+                    dtpFirstDaySem.Value = new DateTime(Year, 6, 1);
+                    dtpLastDaySem.Value = new DateTime(Year, 6, 30);
+                }
             }
         }
 
